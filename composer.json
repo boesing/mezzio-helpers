@@ -32,13 +32,17 @@
         "laminas/laminas-zendframework-bridge": "^1.0",
         "mezzio/mezzio-router": "^3.0",
         "psr/container": "^1.0",
+        "psr/http-factory": "^1.0",
         "psr/http-message": "^1.0.1",
-        "psr/http-server-middleware": "^1.0"
+        "psr/http-server-middleware": "^1.0",
+        "webmozart/assert": "^1.10"
     },
     "require-dev": {
         "ext-json": "*",
+        "ext-zlib": "*",
         "laminas/laminas-coding-standard": "~2.1.0",
         "laminas/laminas-diactoros": "^1.7.1",
+        "lctrs/psalm-psr-container-plugin": "^1.1",
         "malukenho/docheader": "^0.1.8",
         "mockery/mockery": "^1.4.2",
         "phpspec/prophecy-phpunit": "^2.0",
@@ -47,6 +51,7 @@
         "vimeo/psalm": "^4.7"
     },
     "suggest": {
+        "ext-zlib": "If you wish to use the GzipDecompressionProvider with ContentEncodingDecompressionMiddleware",
         "ext-json": "If you wish to use the JsonStrategy with BodyParamsMiddleware"
     },
     "autoload": {
